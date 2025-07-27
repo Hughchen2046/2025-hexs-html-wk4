@@ -1,0 +1,35 @@
+.btn-active{
+    border: 0px;
+    background-color: $neutral-000;
+    padding: 0px;
+    img{
+        width: 64px;
+        height: 64px;
+    }
+  &.active {
+    background-color: rgb($neutral-000,1); // 你的主色
+    color: $neutral-900;
+    img{
+        border: 1px solid $neutral-900;
+    }
+  }    
+}
+.size-choose-active{
+    border: 1px solid $neutral-900;
+}
+.size-choose-disable{
+    border: 1px solid $neutral-300;
+    opacity: 0.4;
+}
+
+.bd-b-1-neu-300{
+    border-bottom: 1px solid $neutral-300;
+}
+@include mobile{
+    .de-outline-md{
+        outline: 0px;
+        width: 48px;
+        padding: 12px;
+    }
+}
+

@@ -1,0 +1,30 @@
+.check-icon{
+    width: 40px;
+    height: 40px;
+    background-color: $primary-300;
+    border-radius: 1000px;
+    text-align: center;
+    align-content: center;
+}
+.span-octime{
+    border-radius: 4px;
+    background-color: $primary-100;
+    padding: 16px;
+    span i{
+        font-size: 24px;
+    }
+    color: $primary-400;
+}
+.img-120{
+    width: 120px;
+    height: 120px;
+}
+.wishlist-product-info{
+    width: calc(100% - 136px);
+}
+
+@include mobile{
+    .text-start-md{
+        text-align: start;
+    }
+}

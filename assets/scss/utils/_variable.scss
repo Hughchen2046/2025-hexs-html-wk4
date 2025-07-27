@@ -1,0 +1,51 @@
+// 主色調
+$primary-100:rgba(245, 254, 231, 1);
+$primary-200:rgba(232, 254, 197, 1);
+$primary-300:rgba(192, 250, 115, 1);
+$primary-400:rgba(87, 162, 3, 1);
+$primary-500:rgba(71, 122, 17,1);
+
+// 次色調
+$neutral-000:#ffffff;
+$neutral-100:#f8f9fa;
+$neutral-200:#e9ecef;
+$neutral-300:#dee2e6;
+$neutral-400:#ced4da;
+$neutral-500:#adb5bd;
+$neutral-600:#6c757d;
+$neutral-700:#495057;
+$neutral-800:#343a40;
+$neutral-900:#212529;
+
+$function-300:rgba(215, 79, 79, 1);
+
+//色調延伸-背景+文字
+$themes: (
+    'primary-100': $primary-100,
+    'primary-200': $primary-200,
+    'primary-300': $primary-300,
+    'primary-400': $primary-400,
+    'primary-500': $primary-500,
+    'neutral-000': $neutral-000,
+    'neutral-100': $neutral-100,
+    'neutral-200': $neutral-200,
+    'neutral-300': $neutral-300,
+    'neutral-400': $neutral-400,
+    'neutral-500': $neutral-500,
+    'neutral-600': $neutral-600,
+    'neutral-700': $neutral-700,
+    'neutral-800': $neutral-800,
+    'neutral-900': $neutral-900,
+    'function-300': $function-300,
+);
+@each $key, $value in $themes {
+    .bg-#{$key} {
+        background-color: $value;
+    }
+}
+@each $key, $value in $themes {
+    .c-#{$key} {
+        color: $value;
+    }
+}
+

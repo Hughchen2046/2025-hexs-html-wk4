@@ -1,0 +1,35 @@
+
+.Breadcrumb-item + .Breadcrumb-item::before{
+    content: "/";
+    padding-left: 12px;
+    padding-right: 12px;
+    color: $neutral-300;
+}
+
+.pagi-link{
+    width: 40px;
+    height: 40px;
+}
+.pagi-link:hover{
+    background-color: $neutral-100;
+}
+.pagi-link:focus{
+    background-color: $primary-300;
+}
+@include mobile{
+    .Breadcrumb-item + .Breadcrumb-item::before{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .t-lb-sm-md{
+        font-size: 14px;
+    }
+    .t-pa-sm-md{
+        font-size: 14px;
+    }
+    .col-12-md{
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 100%;
+    }
+}

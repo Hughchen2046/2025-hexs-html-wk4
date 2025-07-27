@@ -1,0 +1,76 @@
+// Typography Font-weight規格
+$fw-regular:400;
+$fw-medium:500;
+$fw-bold:700;
+
+// Typography 文字規格
+.dp1, .dp2, .t-h1, .t-h2, .t-h3, .t-h4, .t-h5, .t-h6{
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  font-weight: $fw-bold;
+} 
+.dp1{
+  font-size: 64px;
+}
+.dp2{
+  font-size: 48px;
+}
+.t-h1{
+  font-size: 40px;
+}
+.t-h2{
+  font-size: 32px;
+}
+.t-h3{
+  font-size: 28px;
+}
+.t-h4{
+  font-size: 24px;
+}
+.t-h5{
+  font-size: 20px;
+}
+.t-h6{
+  font-size: 16px;
+}
+
+.t-lb-lg, .t-lb-md, .t-lb-sm, .t-lb-xs {
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-weight: $fw-medium;
+}
+
+.t-pa-lg, .t-pa-md, .t-pa-sm, .t-pa-xs {
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-weight: $fw-regular;
+}
+
+.t-lb-lg {
+  font-size: 20px;
+}
+
+.t-lb-md {
+  font-size: 16px;
+}
+.t-lb-sm {
+  font-size: 14px;
+}
+.t-lb-xs {
+  font-size: 12px;
+}
+.t-pa-lg {
+  font-size: 20px;
+}
+.t-pa-md {
+  font-size: 16px;
+}
+.t-pa-sm {
+  font-size: 14px;
+}
+.t-pa-xs {
+  font-size: 12px;
+}
+.text-line-through {
+  text-decoration: line-through;
+}

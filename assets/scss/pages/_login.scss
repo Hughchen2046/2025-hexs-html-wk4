@@ -1,0 +1,60 @@
+.login-top-md{
+    width: 100%;
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true);
+    padding: 24px;
+}
+.login-top-inner-md{
+    h2{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    }
+}
+.login-left{
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true); 
+    height: 589px;
+    border-radius: 12px;
+    padding-top: 71px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.login-right{
+    padding: 120px 80px;
+    border-radius: 12px;
+    background-color: $neutral-200;
+    @include mobile{
+        padding: 8px 0px;
+        background-color: $neutral-000;
+    }
+}
+.bd-radius{
+    border-radius: 4px;
+}
+.bd-neutral-300{
+    border: 1px solid $neutral-300;
+}
+.login-use{
+    border: unset;
+}
+.login-btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: $neutral-600;
+    background-color: transparent;
+    border-bottom: 2px solid $neutral-300;
+    &:hover{
+        color:$neutral-900;
+    }
+}
+.login-btn.active {
+  border-bottom: 2px solid black;
+  color: $neutral-900;
+}

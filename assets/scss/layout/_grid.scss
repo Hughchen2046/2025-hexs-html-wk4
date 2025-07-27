@@ -1,0 +1,137 @@
+.row{
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*2);
+}
+.col-3{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*3);
+}
+.col-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*4);
+}
+.col-5{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*5);
+}
+.col-6{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*6);
+}
+.col-7{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*7);
+}
+.col-8{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*8);
+}
+.col-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*10);    
+}
+.col-12{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+}
+.row-style{
+    margin: -4px;
+}
+.col-style-1{
+    padding: 4px;
+    width: calc(100% / 12*1);
+}
+.col-style-2{
+    padding: 4px;    
+    width: calc(100% / 12*2);
+}
+.col-style-3{
+    padding: 4px;    
+    width: calc(100% / 12*3);
+}
+.col-style-4{
+    padding: 4px;    
+    width: calc(100% / 12*4);
+}
+.col-style-6{
+    padding: 4px;    
+    width: calc(100% / 12*6);
+}
+.col-style-12{
+    padding: 4px;    
+    width: 100%;
+}
+
+@include mobile{
+    .row-md{
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+    .col-md-1{
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/4*1);
+    }
+    .col-md-2{
+        padding-left: 6px;
+        padding-right: 6px;
+        width: calc(100%/4*2);
+    }
+    .col-md-4{
+        padding-left: 6px;
+        padding-right: 6px;
+        width: 100%;
+    }
+    .row-slide-md{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .col-slide-md{
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 316px;
+        height: 300px;
+    }
+
+    .row-style,.row-card-md{
+       flex-wrap: nowrap;
+       margin: 0 -8px;
+       img{
+        min-width: 300px;
+       } 
+    }
+    .col-card-md{
+        img{
+            min-width: 300px;
+        }
+    }
+    .col-style-4, .col-style-6, .col-style-12,.col-card-md{
+        width: unset;
+        padding: 0 8px;
+        &.col-max-md{
+        padding: 0px;
+        width: 100%;
+        }
+    }
+    .col-max-md{
+        padding: 0px;
+        width: 100%;
+    }   
+    .row-max-md{
+        margin: 0px;
+    }
+}

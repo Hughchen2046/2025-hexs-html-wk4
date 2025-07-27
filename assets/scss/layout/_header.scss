@@ -1,4 +1,11 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.sq-person{
+  font-size: 24px;
+  line-height: 0.5;
+  letter-spacing: 0;
+}
+@include mobile{
+  .py-12-md{
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }

@@ -1,3 +1,187 @@
-.index-title {
-  font-size: 80px;
+.hero-section{
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true);
+  position: relative;
+}
+.hero-content{
+  position: absolute;
+  top: 289px;
+  left: 200px;
+}
+@include mobile{
+  .hero-section{
+    height: 480px;
+    background-position: bottom;
+    background-size: cover;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true);
+  }
+  .hero-content{
+    width: calc(100% - 48px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .dp2-md{
+    font-size: 48px;
+  }
+  .mt-24-md{
+    margin-top: 24px;
+  }
+  .me-0-md{
+    margin-right: 0;
+  }
+  .mb-0-md{
+    margin-bottom: 0;
+  }
+  .mb-4-md{
+    margin-bottom: 4;
+  }
+  .mb-8-md{
+    margin-bottom: 8px;
+  }
+  .p-24-md{
+    padding: 24px;
+  }
+  .py-0-md{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .py-8-md{
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }  
+  .py-16-md{
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .pt-32-md{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .py-24-md{
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .py-40-md{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .mb-12-md{
+    margin-bottom: 12px;
+  } 
+  .mb-16-md{
+    margin-bottom: 16px;
+  } 
+  .mb-24-md{
+    margin-bottom: 24px;
+  } 
+  .mb-32-md{
+    margin-bottom: 32px;
+  }
+  .me-16-md{
+    margin-right: 16px;
+  }
+  .t-h2-md{
+    font-size: 32px;
+  }
+  .t-h3-md{
+    font-size: 28px;
+  }
+  .t-h4-md{
+    font-size: 24px;
+  }
+  .t-h5-md{
+    font-size: 20px;
+  }
+  .t-h6-md{
+    font-size: 16px;
+  }
+}
+.slider{
+  li{
+    position: relative;
+    span{
+      position:absolute;
+      top: 0;
+      left: 12px;
+      padding: 8px 12px;;
+    }
+  }
+}
+@include mobile{
+  .slider, .style-slider, .card-slider{
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .col-slide-md{
+      flex: 0 0 auto;
+      span{
+        left:8px;
+      }
+    }
+  }
+}
+.banner-section{
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true);  
+}
+.banner-wrap{
+  z-index: 1;
+  position: relative;
+  width: 634px;
+  .banner-star{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: -302px;
+    left: -80px;
+  }
+  .banner-sparkle{
+    width: 76px;
+    height: 64px;
+    position: absolute;
+    top: -96px;
+    left: 596px;
+  }
+}
+@include mobile{
+  .banner-section{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded-sm.png?raw=true);
+    overflow: hidden;
+  }
+  .banner-wrap{
+    width: 351px;
+    .banner-star{
+      top: -352px;
+      left: -32px;
+  }
+    .banner-sparkle{
+      top: -101px;
+      left: 315px;
+    }
+  }
+
+}
+.card-serie{
+  position: relative;
+  img {
+    filter: brightness(60%);
+  }
+  .card-text{
+    position: absolute;
+    z-index: 3;
+  }
 }
